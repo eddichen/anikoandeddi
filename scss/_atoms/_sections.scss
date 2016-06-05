@@ -53,6 +53,8 @@
 }
 
 .background-fixed {
+    clip: rect(0,auto,auto,0);
+    -webkit-clip-path: inset(0 0 0 0);
     position: absolute;
     top: 0;
     left: 0;

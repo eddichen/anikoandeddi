@@ -49,4 +49,4 @@ gulp.task('images', function() {
         .pipe(gulp.dest('./images'));
 });
 
-gulp.task('default', ['scripts','sass']);
+gulp.task('build', ['scripts','sass']);
