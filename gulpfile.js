@@ -35,4 +35,18 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('./js/'));
 });
 
+/** images **/
+
+gulp.task('images', function() {
+    'use strict';
+
+    return gulp.src('./images-original/**/*')
+        .pipe($.cache($.imagemin({
+            optimizationLevel: 5,
+            progressive: true,
+            interlaced: true
+        })))
+        .pipe(gulp.dest('./images'));
+});
+
 gulp.task('default', ['scripts','sass']);
