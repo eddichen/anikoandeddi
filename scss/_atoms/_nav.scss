@@ -1,0 +1,36 @@
+.nav-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.nav {
+    display: table;
+    margin: 0 auto;
+
+    &__list {
+        display: table-row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: table-cell;
+
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Great Vibes', cursive;
+            font-size: 40px;
+            padding: 20px 30px;
+            line-height: 1;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

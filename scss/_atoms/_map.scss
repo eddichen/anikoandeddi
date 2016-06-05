@@ -1,0 +1,15 @@
+.section__map {
+    position: relative;
+    z-index: 4;
+}
+
+.section__map,
+.map {
+    height: 100vh;
+    width: 100%;
+}
+
+.map {
+    border: 0;
+    pointer-events: none;
+}
