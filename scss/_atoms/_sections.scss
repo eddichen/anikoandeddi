@@ -20,36 +20,50 @@
     }
 }
 
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.logo-names {
-    fill: #fff;
-    width: 750px;
-}
-
 .intro {
     position: relative;
     z-index: 4;
     background-image: url("../images/budapest.jpg");
     background-size: cover;
     background-position: center;
+
+    &__title {
+        display: table;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo-names {
+    fill: #fff;
+    width: 80%;
+    max-width: 750px;
 }
 
 .details {
     &__text {
         text-align: center;
-        font-size: 24px;
+        font-size: 16px;
+
+        @include grid-media-query('desk') {
+            font-size: 24px;
+        }
     }
 }
 
 .gellert {
     position: relative;
     overflow: hidden;
+}
+
+.rsvp {
+    text-align: left;
 }
 
 .background-fixed {
